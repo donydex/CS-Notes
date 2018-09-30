@@ -229,10 +229,10 @@ Output:
 
 ```java
 public String replaceSpace(StringBuffer str) {
-    int P1 = str.length() - 1;
+    int P1 = str.length() - 1;//str是对象，使用length方法
     for (int i = 0; i <= P1; i++)
         if (str.charAt(i) == ' ')
-            str.append("  ");
+            str.append("  ");//注意这个地方是两个空格,而非三个
 
     int P2 = str.length() - 1;
     while (P1 >= 0 && P2 > P1) {
@@ -248,6 +248,7 @@ public String replaceSpace(StringBuffer str) {
     return str.toString();
 }
 ```
+
 
 # 6. 从尾到头打印链表
 
